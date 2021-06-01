@@ -1,0 +1,44 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "chebihi",
+      "email": "f.chebihi@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "mohamed",
+      "email": "mohamed@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "sanaa",
+      "email": "sanaa@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "anas",
+      "email": "anas@hotmail.com"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "product1",
+      "price": 1000,
+      "qte": 20
+    },
+    {
+      "id": 2,
+      "name": "product2",
+      "price": 2000,
+      "qte": 10
+    },
+    {
+      "id": 3,
+      "name": "product3",
+      "price": 100,
+      "qte": 200
+    }
+  ]
+}

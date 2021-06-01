@@ -1,0 +1,33 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <ul class="navbar navbar-nav">
+      <li>
+        <button class="btn btn-outline-info" (click)="getAll()">All</button>
+      </li>
+      <li>
+        <button class="btn btn-outline-info" (click)="getGmailClients()">Gmail</button>
+      </li>
+      <li>
+        <button class="btn btn-outline-info" (click)="getHotmailClients()">Hotmail</button>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="container" *ngIf="clients$">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of clients$ | async">
+        <td>{{c.id}}</td>
+        <td>{{c.name}}</td>
+        <td>{{c.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
